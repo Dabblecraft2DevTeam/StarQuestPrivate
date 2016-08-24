@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.UUID;
 
 import net.countercraft.movecraft.crafttransfer.SerializableLocation;
-import com.dibujaron.cardboardbox.Knapsack;
+import com.starquestminecraft.bukkit.cardboardbox.Knapsack;
 
 import org.bukkit.GameMode;
 import org.bukkit.Location;

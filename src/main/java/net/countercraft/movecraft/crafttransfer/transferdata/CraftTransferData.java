@@ -6,7 +6,7 @@ import org.bukkit.Location;
 import org.bukkit.block.Sign;
 import org.bukkit.inventory.InventoryHolder;
 
-import com.dibujaron.cardboardbox.Crate;
+import com.starquestminecraft.bukkit.cardboardbox.Crate;
 
 import net.countercraft.movecraft.utils.MovecraftLocation;
 

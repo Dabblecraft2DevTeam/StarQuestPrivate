@@ -5,6 +5,7 @@ author: AJCStriker
 website: http://madrealms.net/forums/
 main: net.countercraft.movecraft.Movecraft
 database: false
+depend: [StarQuest]
 
 commands:
    removehome:

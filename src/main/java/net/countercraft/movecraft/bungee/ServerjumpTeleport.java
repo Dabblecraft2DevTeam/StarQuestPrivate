@@ -16,7 +16,7 @@ import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 
-import com.dibujaron.cardboardbox.Knapsack;
+import com.starquestminecraft.bukkit.cardboardbox.Knapsack;
 
 public class ServerjumpTeleport implements PlayerTeleport{
 

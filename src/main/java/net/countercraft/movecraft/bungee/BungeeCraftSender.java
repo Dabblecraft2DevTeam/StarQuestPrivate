@@ -20,6 +20,9 @@ import org.bukkit.block.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
+
+import com.starquestminecraft.bukkit.util.InventoryUtil;
+
 @Deprecated
 public class BungeeCraftSender {
 
@@ -140,7 +143,7 @@ public class BungeeCraftSender {
 				 * msgout.writeInt(s.getDurability());
 				 * msgout.writeInt(s.getAmount()); msgout.writeInt(index); } }
 				 */
-				InventoryUtils.writeInventory(msgout, i);
+				InventoryUtil.writeInventory(msgout, i);
 				if(wipeInventories){
 					i.clear();
 				}

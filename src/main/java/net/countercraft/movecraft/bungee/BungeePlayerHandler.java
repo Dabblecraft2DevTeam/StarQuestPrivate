@@ -24,7 +24,8 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 
-import com.dibujaron.cardboardbox.Knapsack;
+import com.starquestminecraft.bukkit.cardboardbox.Knapsack;
+import com.starquestminecraft.bukkit.util.InventoryUtil;
 
 /**
  * @author Dibujaron
@@ -175,7 +176,7 @@ public class BungeePlayerHandler {
 		msgout.writeInt(Z);
 		msgout.writeDouble(l.getYaw());
 		msgout.writeDouble(l.getPitch());
-		InventoryUtils.writePlayer(msgout, p);
+		InventoryUtil.writePlayer(msgout, p);
 		msgout.writeInt(gameModeToInt(p.getGameMode()));
 		msgout.writeBoolean(isBedspawn);
 	}
@@ -250,7 +251,7 @@ public class BungeePlayerHandler {
 			int coordZ = msgin.readInt();
 			double yaw = msgin.readDouble();
 			double pitch = msgin.readDouble();
-			Knapsack playerKnap = InventoryUtils.readPlayer(msgin);
+			Knapsack playerKnap = InventoryUtil.readPlayer(msgin);
 			GameMode gamemode = intToGameMode(msgin.readInt());
 			boolean isBedspawn = msgin.readBoolean();
 			//I should remove this sometime.

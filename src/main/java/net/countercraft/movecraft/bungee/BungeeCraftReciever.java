@@ -13,6 +13,8 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
 
+import com.starquestminecraft.bukkit.util.InventoryUtil;
+
 /**
  * @author Dibujaron
  * BUNGEECORD: TURN BACK NOW FAINT OF HEART
@@ -86,7 +88,7 @@ public class BungeeCraftReciever {
         		//recieve inventory blocks
         		if (inv){
         			InventoryType type = InventoryType.valueOf(msgin.readUTF());
-        			Inventory contents = InventoryUtils.readInventory(msgin, type);
+        			Inventory contents = InventoryUtil.readInventory(msgin, type);
         			LocAndBlock b = new LocAndBlock(X, Y, Z, id, data, contents);
         			blockloclist[i] = b;	        		
     			} else if(id == 63 || id == 68){
