@@ -64,7 +64,7 @@ import org.inventivetalent.particle.ParticleEffect;
 import com.whirlwindgames.dibujaron.sqempire.Empire;
 import com.whirlwindgames.dibujaron.sqempire.database.object.EmpirePlayer;
 
-import us.higashiyama.george.SQSpace.SQSpace;
+import com.starquestminecraft.bukkit.space.SQSpace;
 
 import java.util.Vector;
 

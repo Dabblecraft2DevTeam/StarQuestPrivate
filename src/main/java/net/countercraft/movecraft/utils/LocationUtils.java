@@ -13,7 +13,7 @@ import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 
-import us.higashiyama.george.SQSpace.SQSpace;
+import com.starquestminecraft.bukkit.space.SQSpace;
 
 public class LocationUtils {
 	public static HashMap<String, Location> planets = new HashMap<String, Location>();
