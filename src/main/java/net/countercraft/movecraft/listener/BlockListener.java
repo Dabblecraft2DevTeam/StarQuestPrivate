@@ -64,7 +64,7 @@ public class BlockListener implements Listener {
 		for (String s : event.getLines()) {
 			for (int i = 0; i < s.length(); i++) {
 				char c = s.charAt(i);
-				if (c == '§') {
+				if (c == '\u00a7') {
 					event.getPlayer().sendMessage("Colored chat signs are disabled.");
 					event.setCancelled(true);
 					return;
@@ -80,7 +80,7 @@ public class BlockListener implements Listener {
 					}
 				}
 			}
-			if (s.contains("§")) {
+			if (s.contains("\u00a7")) {
 				event.getPlayer().sendMessage("Colored chat signs are disabled.");
 				event.setCancelled(true);
 			}
